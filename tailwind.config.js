@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         outfit: ['Outfit', 'sans-serif'],
+        jost: ['jost', 'sans-serif'],
+        arimo: ['Arimo', 'sans-serif'],
       },
     },
   },

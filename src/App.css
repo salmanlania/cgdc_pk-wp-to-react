@@ -50,3 +50,112 @@
   width: 100%;
   z-index: 10;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: white;
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: #ccc;
+  opacity: 0.7;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #333;
+  opacity: 1;
+}
+
+.serviceImage {
+  overflow: hidden;
+}
+
+.serviceImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97%;
+  background-color: rgba(0, 0, 0, 0.502);
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  color: white;
+  z-index: 10;
+  background-color: #0000009c;
+  padding: 6px 16px;
+}
+
+.projectImage {
+  overflow: hidden;
+}
+
+.projectImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97%;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .translate-600-1000 {
+    transform: translateY(-50%);
+    top: 60%;
+  }
+}
+
+.aboutImage {
+  background-image: url("./assets/images/aboutbg.png");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutImage {
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+.modal-scroll {
+  max-height: 90vh;
+  overflow-y: auto;
+}
