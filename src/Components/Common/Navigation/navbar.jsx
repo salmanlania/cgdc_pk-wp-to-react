@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Popover, Button, Dropdown, Menu } from 'antd';
+import { Popover, Button, Dropdown } from 'antd';
 import { MenuOutlined, DownOutlined } from '@ant-design/icons';
 import Logo from "../../../assets/images/new-logo-banner.png";
 import LogoGray from "../../../assets/images/CGDC-Logo.png";
@@ -12,32 +12,30 @@ const useIsHome = () => {
 };
 
 const Navbar = () => {
-    const isHome = useIsHome(); // Call the function here
+    const isHome = useIsHome();
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
-    // Dropdown menu for 'Our Services'
-    const servicesMenu = (
-        <Menu>
-            <Menu.Item><Link to="/services/architecture">Architecture</Link></Menu.Item>
-            <Menu.Item><Link to="/services/town-planning">Town Planning</Link></Menu.Item>
-            <Menu.Item><Link to="/services/project-management">Project Management</Link></Menu.Item>
-            <Menu.Item><Link to="/services/mep-designing">MEP Designing</Link></Menu.Item>
-            <Menu.Item><Link to="/services/structure-engineering">Structure Engineering</Link></Menu.Item>
-            <Menu.Item><Link to="/services/building-economics">Building Economics</Link></Menu.Item>
-            <Menu.Item><Link to="/services/financial-feasibility">Financial Feasibility</Link></Menu.Item>
-            <Menu.Item><Link to="/services/interior-designing">Interior Designing</Link></Menu.Item>
-        </Menu>
-    );
+    // Adjusted services menu using items array
+    const servicesMenu = [
+        { key: '1', label: <Link to="/services/architecture">Architecture</Link> },
+        { key: '2', label: <Link to="/services/town-planning">Town Planning</Link> },
+        { key: '3', label: <Link to="/services/project-management">Project Management</Link> },
+        { key: '4', label: <Link to="/services/mep-designing">MEP Designing</Link> },
+        { key: '5', label: <Link to="/services/structure-engineering">Structure Engineering</Link> },
+        { key: '6', label: <Link to="/services/building-economics">Building Economics</Link> },
+        { key: '7', label: <Link to="/services/financial-feasibility">Financial Feasibility</Link> },
+        { key: '8', label: <Link to="/services/interior-designing">Interior Designing</Link> },
+    ];
 
     const content = (
         <div>
             <Link to="/" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">Home</Link>
             <Link to="/about" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">About us</Link>
-            <Dropdown  overlay={servicesMenu} trigger={['click']}>
+            <Dropdown menu={{ items: servicesMenu }} trigger={['click']}>
                 <span className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose cursor-pointer">
                     Our Services <DownOutlined />
                 </span>
@@ -70,7 +68,7 @@ const Navbar = () => {
                 <nav className="hidden md:flex md:ml-auto font-outfit flex-wrap items-center text-base justify-center">
                     <Link to="/" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">HOME</span></Link>
                     <Link to="/about" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">ABOUT US</span></Link>
-                    <Dropdown overlay={servicesMenu} trigger={['click']}>
+                    <Dropdown menu={{ items: servicesMenu }} trigger={['click']}>
                         <span className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}>
                             <span className="mr-5 py-5 text-xs">OUR SERVICES <DownOutlined /></span>
                         </span>

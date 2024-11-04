@@ -2,7 +2,8 @@ const ServiceComp = ({ description, serviceName, url }) => {
     return (
         <>
             <div className="service">
-                <div className={`relative serviceImg bg-[url('./assets/images/${url}')] h-[30vh] bg-no-repeat bg-cover bg-center md:h-[50vh] md:bg-top flex items-center justify-center`}>
+                {/* <div className={`relative serviceImg bg-[url('./assets/images/${url}')] h-[30vh] bg-no-repeat bg-cover bg-center md:h-[50vh] md:bg-top flex items-center justify-center`}> */}
+                <div className={`relative serviceImg bg-[url('./assets/images/service1.jpg')] h-[30vh] bg-no-repeat bg-cover bg-center md:h-[50vh] md:bg-top flex items-center justify-center`}>
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-black opacity-40"></div>
 
