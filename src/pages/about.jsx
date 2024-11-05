@@ -11,8 +11,8 @@ const About = () => {
                         <b>About Us</b>
                     </h1>
                 </div>
-                <div className="bg-zinc-600 py-16 px-4">
-                    <div className="text-white font-light font-jost mx-auto text-justify lg:leading-loose leading-relaxed">
+                <div className="bg-zinc-600 py-8 px-4">
+                    <div className="text-white font-light font-jost mx-auto text-justify lg:leading-loose leading-loose">
                         <p className="max-w-xl mx-auto">
                             CGD Consulting is a leading consulting firm renowned for its expertise in urban planning, architecture, and engineering. Founded by Hafeez Habibi, the company has accomplished successful projects in Pakistan and internationally and is known for its dedication to providing high-quality services at affordable prices. CGD Consulting has worked with a wide range of clients from both the public and private sectors, including multinationals, public and private limited companies, and various government organizations, including forces. The company is committed to offering personalized service and maintaining a high level of quality for each client and every project. In addition to its expertise in urban planning, architecture, and engineering, CGD Consulting is also highly respected for its professionalism and reliability. The company is well-equipped to help clients efficiently achieve their goals and is dedicated to providing the best possible service at all times. CGD Consulting is a trusted and respected consulting firm that is comfortable to help clients achieve their goals and realize their vision for their projects.
                         </p>

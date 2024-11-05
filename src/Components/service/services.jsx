@@ -2,8 +2,11 @@ const ServiceComp = ({ description, serviceName, url }) => {
     return (
         <>
             <div className="service">
-                {/* <div className={`relative serviceImg bg-[url('./assets/images/${url}')] h-[30vh] bg-no-repeat bg-cover bg-center md:h-[50vh] md:bg-top flex items-center justify-center`}> */}
-                <div className={`relative serviceImg bg-[url('./assets/images/service1.jpg')] h-[30vh] bg-no-repeat bg-cover bg-center md:h-[50vh] md:bg-top flex items-center justify-center`}>
+                {/* Background Image with Inline Style */}
+                <div
+                    className="relative h-[30vh] bg-no-repeat bg-cover bg-center md:h-[50vh] md:bg-top flex items-center justify-center"
+                    style={{ backgroundImage: `url(${url})` }}
+                >
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-black opacity-40"></div>
 
@@ -13,8 +16,8 @@ const ServiceComp = ({ description, serviceName, url }) => {
                     </h1>
                 </div>
 
-                <div className="py-16 px-4">
-                    <div className="font-light font-jost mx-auto text-justify lg:leading-loose leading-relaxed">
+                <div className="py-8 px-4">
+                    <div className="font-light font-jost mx-auto text-justify lg:leading-loose leading-loose">
                         <p className="max-w-xl mx-auto">
                             {description}
                         </p>
@@ -23,6 +26,6 @@ const ServiceComp = ({ description, serviceName, url }) => {
             </div>
         </>
     );
-}
+};
 
 export default ServiceComp;

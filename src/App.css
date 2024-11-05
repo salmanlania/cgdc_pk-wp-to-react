@@ -1,4 +1,4 @@
-.banner {
+/* .banner {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,6 +42,55 @@
   right: 24px;
   color: white;
   z-index: 10;
+}
+ */
+
+.banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2; /* Places the video behind all content */
+}
+
+.dotted-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b1;
+  background-image: url("https://png.pngtree.com/png-vector/20220921/ourmid/pngtree-black-halftone-dots-overlay-background-png-image_6208919.png"); /* Update with the actual path */
+  opacity: 0.5; /* Adjust for preferred transparency */
+  z-index: -1; /* Overlay sits above video but behind text */
+}
+
+.banner .banner-text {
+  position: absolute;
+  bottom: 30px;
+  left: 24px;
+  color: white;
+  z-index: 10;
+}
+.banner .banner-text-right {
+  position: absolute;
+  bottom: 50px;
+  right: 24px;
+  color: white;
+  z-index: 10;
+}
+
+.bannerOne,
+.bannerTwo {
+  height: 100vh;
 }
 
 .navbar {
@@ -139,7 +188,7 @@
 }
 
 .aboutImage {
-  background-image: url("./assets/images/aboutbg.png");
+  background-image: url("./assets/images/aboutbg.jpg");
   height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;

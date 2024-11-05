@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Popover, Button, Dropdown } from 'antd';
-import { MenuOutlined, DownOutlined } from '@ant-design/icons';
+import { MenuOutlined, DownOutlined, CaretDownOutlined } from '@ant-design/icons';
 import Logo from "../../../assets/images/new-logo-banner.png";
 import LogoGray from "../../../assets/images/CGDC-Logo.png";
 import "../../../App.css";
@@ -33,19 +33,19 @@ const Navbar = () => {
 
     const content = (
         <div>
-            <Link to="/" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">Home</Link>
-            <Link to="/about" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">About us</Link>
+            <Link to="/" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Home</Link>
+            <Link to="/about" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">About us</Link>
             <Dropdown menu={{ items: servicesMenu }} trigger={['click']}>
-                <span className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose cursor-pointer">
-                    Our Services <DownOutlined />
+                <span className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose cursor-pointer">
+                    Our Services <CaretDownOutlined />
                 </span>
             </Dropdown>
-            <Link to="/projects" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">Projects</Link>
-            <Link to="/ourteam" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">Our Team</Link>
-            <Link to="/careers" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">Careers</Link>
-            <Link to="/affiliations" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">Affiliations</Link>
-            <Link to="/news" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">News</Link>
-            <Link to="/contact" className="block hover:text-red-800 hover:underline uppercase font-jost leading-loose">Contact us</Link>
+            <Link to="/projects" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Projects</Link>
+            <Link to="/ourteam" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Our Team</Link>
+            <Link to="/careers" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Careers</Link>
+            <Link to="/affiliations" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Affiliations</Link>
+            <Link to="/news" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">News</Link>
+            <Link to="/contact" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Contact us</Link>
         </div>
     );
 
@@ -70,7 +70,7 @@ const Navbar = () => {
                     <Link to="/about" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">ABOUT US</span></Link>
                     <Dropdown menu={{ items: servicesMenu }} trigger={['click']}>
                         <span className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}>
-                            <span className="mr-5 py-5 text-xs">OUR SERVICES <DownOutlined /></span>
+                            <span className="mr-5 py-5 text-xs">OUR SERVICES <CaretDownOutlined /></span>
                         </span>
                     </Dropdown>
                     <Link to="/projects" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">PROJECTS</span></Link>
