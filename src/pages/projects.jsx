@@ -10,6 +10,9 @@ import project8 from "../assets/images/projects/project8.jpg";
 // import staticImg from "../assets/images/projects/static.png";
 import "../App.css";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = () => {
 
@@ -1254,7 +1257,12 @@ const Project = () => {
         },
         // Water and Power end
     ]
-
+    useEffect(() => {
+        AOS.init({
+            duration: 3000,
+            once: true,
+        });
+    }, []);
     return (
         <>
             <div className="overflow-hidden mx-3 mb-16">
@@ -1265,7 +1273,7 @@ const Project = () => {
                     {projectArr.map((project) => (
                         <Col key={project.id} xs={24} sm={12} md={8} lg={6}>
                             <Link to={`/project/${project.page}`} state={{ cardData: project.cards }}>
-                                <div className="project-card relative overflow-hidden group">
+                                <div className="project-card relative overflow-hidden group" data-aos="fade-up">
                                     <img src={project.prjImg} alt={project.prjType} className="w-full h-full object-cover" />
                                     {/* Overlay */}
                                     <div className="project-overlay uppercase font-jost font-bold text-white">

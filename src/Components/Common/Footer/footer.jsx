@@ -1,6 +1,7 @@
 import Logo from "../../../assets/images/CGDC-Logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -48,28 +49,44 @@ const Footer = () => {
                             </h2>
                             <nav className="list-none mb-10">
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Housing and Urban Design</a>
+                                    <Link to={"/project/housing-and-urban-design"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Housing and Urban Design</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Health Facility</a>
+                                    <Link to={"/project/health-facility"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Health Facility</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Industrial Projects</a>
+                                    <Link to={"/project/industrial-projects"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Industrial Projects</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Institutional Buildings</a>
+                                    <Link to={"/project/institutinal-buildings"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Institutional Buildings</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Infrastructure</a>
+                                    <Link to={"/project/infrastructure"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Infrastructure</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Mixed-Use Projects</a>
+                                    <Link to={"/project/mixed-use-projects"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Mixed-Use Projects</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Recreational Tourism</a>
+                                    <Link to={"/project/recreational-tourism"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Recreational Tourism</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Water and Power</a>
+                                    <Link to={"/project/water-and-power"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Water and Power</a>
+                                    </Link>
                                 </li>
                             </nav>
                         </div>
@@ -155,7 +172,7 @@ const Footer = () => {
                 <div className="font-jost bg-neutral-600">
                     <div className="container mx-auto py-3 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white text-sm text-center px-3">
-                            <b>Disclamer:</b> The projects indicated in our company profile show hands-on experience of Hafeez Habibi's projects while being partner and co-owner of M/S Consultants Group and while working with NESPAK on various projects.
+                            <b>Disclamer:</b> The projects indicated in our company profile show hands-on experience of Hafeez {`Habibi's`} projects while being partner and co-owner of M/S Consultants Group and while working with NESPAK on various projects.
                         </p>
                     </div>
                 </div>

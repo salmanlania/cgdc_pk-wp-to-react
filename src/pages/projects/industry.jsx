@@ -28,7 +28,73 @@ const Industry = () => {
         setSelectedCard(null); // Reset selected card when modal closes
     };
 
-    const cardData = state?.cardData;
+    let cardData = state?.cardData;
+
+
+    if (!cardData) {
+        cardData = [
+            {
+                id: 1,
+                cardTitle: "Textile Processing Plant /Office Building for M/S. Universal Chemicals at Karachi",
+                details: {
+                    id: 1,
+                    prjName: "Textile Processing Plant /Office Building for M/S. Universal Chemicals at Karachi",
+                    mainLoc: "Dr. Arshad Vohra",
+                    city: "Karachi, Pakistan",
+                    workType: "Architectural & Engineering DesignTop Supervision",
+                    amount: "40 Million",
+                }
+            },
+            {
+                id: 2,
+                cardTitle: "Textile Factory for M/S. Moon Light Industries",
+                details: {
+                    id: 2,
+                    prjName: "Textile Factory for M/S. Moon Light Industries",
+                    mainLoc: "Dr. Arshad Vohra",
+                    city: "Karachi, Pakistan",
+                    workType: "Architectural & Engineering DesignTop Supervision",
+                    amount: "50 Million",
+                }
+            },
+            {
+                id: 3,
+                cardTitle: "Rehabilitation of Factory Building at Site, Karachi",
+                details: {
+                    id: 3,
+                    prjName: "Rehabilitation of Factory Building at Site, Karachi",
+                    mainLoc: "National Pesticide",
+                    city: "Karachi, Pakistan",
+                    workType: "Architectural & Engineering Design",
+                    amount: "40 Million",
+                }
+            },
+            {
+                id: 4,
+                cardTitle: "Pasdec Project at Gaddani",
+                details: {
+                    id: 4,
+                    prjName: "Pasdec Project at Gaddani",
+                    mainLoc: "Pakistan Stone Development Corporation",
+                    city: "Gaddani, Pakistan",
+                    workType: "Master Planning & Detailed Engineering Design",
+                    amount: "50 Million",
+                }
+            },
+            {
+                id: 5,
+                cardTitle: "Gwadar Industrial Estate",
+                details: {
+                    id: 5,
+                    prjName: "Gwadar Industrial Estate",
+                    mainLoc: "Government of Baluchistan",
+                    city: "Gwadar, Pakistan",
+                    workType: "Master Planning, Engineering Design & Project Management",
+                    amount: "5.0 Billion",
+                }
+            },
+        ];
+    }
 
     return (
         <>

@@ -28,7 +28,144 @@ const Institute = () => {
         setSelectedCard(null); // Reset selected card when modal closes
     };
 
-    const cardData = state?.cardData;
+    let cardData = state?.cardData;
+
+    if (!cardData) {
+        cardData = [
+            {
+                id: 1,
+                cardTitle: "Government Girls College, Gwadar.",
+                details: {
+                    id: 1,
+                    prjName: "Government Girls College, Gwadar.",
+                    mainLoc: "DC Gwadar",
+                    city: "Gwadar, Pakistan",
+                    workType: "Design & Project Management",
+                    amount: "20 Million",
+                }
+            },
+            {
+                id: 2,
+                cardTitle: "Rotary School Rawalakot",
+                details: {
+                    id: 2,
+                    prjName: "Rotary School Rawalakot",
+                    mainLoc: "Rotary International",
+                    city: "Rawalakot, Azad Kashmir",
+                    workType: "Architectural & Engineering Design Top supervision",
+                    amount: "N/A",
+                }
+            },
+            {
+                id: 3,
+                cardTitle: "Rotary Schools At Karachi, Ziarat, Turbat Etc.",
+                details: {
+                    id: 3,
+                    prjName: "Rotary Schools At Karachi, Ziarat, Turbat Etc.",
+                    mainLoc: "Rotary International",
+                    city: "Pakistan",
+                    workType: "Design & Project Management",
+                    amount: "10 Million",
+                }
+            },
+            {
+                id: 4,
+                cardTitle: "Rotary School Jalalabad",
+                details: {
+                    id: 4,
+                    prjName: "Rotary School Jalalabad",
+                    mainLoc: "Rotary International",
+                    city: "Jalalabad, Afghanistan",
+                    workType: "Architectural & Engineering Design Top supervision",
+                    amount: "0.5 Million USD",
+                }
+            },
+            {
+                id: 5,
+                cardTitle: "City School Larkana",
+                details: {
+                    id: 5,
+                    prjName: "City School Larkana",
+                    mainLoc: "Civic Centre Company(Pvt) ltd.",
+                    city: "Larkana, Pakistan",
+                    workType: "Architectural & Engineering Design Top supervision",
+                    amount: "200 Million",
+                }
+            },
+            {
+                id: 6,
+                cardTitle: "Army Public School",
+                details: {
+                    id: 6,
+                    prjName: "Army Public School",
+                    mainLoc: "Pakistan Army",
+                    city: "Karachi, Pakistan",
+                    workType: "Architectural & Engineering Design Top supervision",
+                    amount: "50 Million",
+                }
+            },
+            {
+                id: 7,
+                cardTitle: "Gwadar Public School",
+                details: {
+                    id: 7,
+                    prjName: "Gwadar Public School",
+                    mainLoc: "DC Gwadar",
+                    city: "Gwadar, Pakistan",
+                    workType: "Architectural & Engineering Design Top supervision",
+                    amount: "18 Million",
+                }
+            },
+            {
+                id: 8,
+                cardTitle: "Aga Khan School at Osh Kyrgyzstan",
+                details: {
+                    id: 8,
+                    prjName: "Aga Khan School at Osh Kyrgyzstan",
+                    mainLoc: "Aga Khan Education Service, Kyrgyzstan",
+                    city: "Kyrgyzstan",
+                    workType: "Design & Project Management",
+                    amount: "2.0 Million USD",
+                }
+            },
+            {
+                id: 9,
+                cardTitle: "Construction of School at Diyyat-Tolagi",
+                details: {
+                    id: 9,
+                    prjName: "Construction of School at Diyyat-Tolagi",
+                    mainLoc: "Rotary International",
+                    city: "Construction of School at Diyyat-Tolagi",
+                    workType: "Architectural & Engineering Design Top supervision",
+                    amount: "10.0 Million",
+                }
+            },
+            {
+                id: 10,
+                cardTitle: "Education institute/ School at Various Location",
+                details: {
+                    id: 10,
+                    prjName: "Education institute/ School at Various Location",
+                    mainLoc: "Rotary International",
+                    city: "Pakistan / Afghanistan",
+                    workType: "Design & Project Management",
+                    amount: "100 Million",
+                }
+            },
+            {
+                id: 11,
+                cardTitle: "Pakistan Naval Academy",
+                details: {
+                    id: 11,
+                    prjName: "Pakistan Naval Academy",
+                    mainLoc: "Pakistan Navy",
+                    city: "Karachi, Pakistan",
+                    workType: "Master Planning, Architectural & Engineering Design, Project Management",
+                    amount: "2.0 Billion",
+                }
+            },
+        ];
+    }
 
     return (
         <>

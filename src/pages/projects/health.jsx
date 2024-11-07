@@ -28,7 +28,108 @@ const Health = () => {
         setSelectedCard(null); // Reset selected card when modal closes
     };
 
-    const cardData = state?.cardData;
+    let cardData = state?.cardData;
+
+    if (!cardData) {
+        cardData = [
+            {
+                id: 1,
+                cardTitle: "Repair & Renovation of Red Crescent Medical Centre at Grumandir Karachi",
+                details: {
+                    id: 1,
+                    prjName: "Repair & Renovation of Red Crescent Medical Centre at Grumandir Karachi",
+                    mainLoc: "Pakistan Red Crescent Society",
+                    city: "Karachi, Pakistan",
+                    workType: "Architectural & Engineering DesignTop Supervision",
+                    amount: "20 Million",
+                }
+            },
+            {
+                id: 2,
+                cardTitle: "Eye Hospital at Gwadar",
+                details: {
+                    id: 2,
+                    prjName: "Eye Hospital at Gwadar",
+                    mainLoc: "Mary Adelaide Foundation",
+                    city: "Gwadar, Pakistan",
+                    workType: "Architectural & Engineering DesignTop Supervision",
+                    amount: "20 Million",
+                }
+            },
+            {
+                id: 3,
+                cardTitle: "Orangi Town Hilal-e-Ahmer",
+                details: {
+                    id: 3,
+                    prjName: "Orangi Town Hilal-e-Ahmer",
+                    mainLoc: "Red Cresent Society",
+                    city: "Karachi, Pakistan",
+                    workType: "",
+                    amount: "100 Million",
+                }
+            },
+            {
+                id: 4,
+                cardTitle: "Islamic Mission Hospital Korangi",
+                details: {
+                    id: 4,
+                    prjName: "Islamic Mission Hospital Korangi",
+                    mainLoc: "",
+                    city: "Karachi, Pakistan",
+                    workType: "",
+                    amount: "100 Million",
+                }
+            },
+            {
+                id: 5,
+                cardTitle: "Belair Clinic (Extension of 50 bed) Hospital",
+                details: {
+                    id: 5,
+                    prjName: "Belair Clinic (Extension of 50 bed) Hospital",
+                    mainLoc: "Dr.F.Shaikh",
+                    city: "Hyderabad, Pakistan",
+                    workType: "Architectural & Engineering DesignTop Supervision",
+                    amount: "100 Million",
+                }
+            },
+            {
+                id: 6,
+                cardTitle: "Proposed Socio- Medical Complex at Orangi - 5",
+                details: {
+                    id: 6,
+                    prjName: "Proposed Socio-Medical Complex at Orangi-5",
+                    mainLoc: "Pakistan Red Crescent Society",
+                    city: "Karachi, Pakistan",
+                    workType: "Architectural & Engineering DesignTop Supervision",
+                    amount: "100 Million",
+                }
+            },
+            {
+                id: 7,
+                cardTitle: "HRH Prince Fahad Bin Sultan Bin Abdul Aziz Al-Saud Welfare Hospital at Dalbandin",
+                details: {
+                    id: 7,
+                    prjName: "HRH Prince Fahad Bin Sultan Bin Abdul Aziz Al-Saud Welfare Hospital at Dalbandin",
+                    mainLoc: "HRH Prince Fahad Bin Sultan Bin Abdul Aziz Al-Saud, Governor of Tabuk, K.S.A",
+                    city: "Dalbandin Baluchistan, Pakistan",
+                    workType: "Turnkey Project",
+                    amount: "200 Million",
+                }
+            },
+            {
+                id: 8,
+                cardTitle: "Expansion & modification of Hilal-e-Ahmer House Clifton",
+                details: {
+                    id: 8,
+                    prjName: "Expansion & modification of Hilal-e-Ahmer House Clifton",
+                    mainLoc: "Pakistan Red Crescent Society",
+                    city: "Karachi, Pakistan",
+                    workType: "Architectural & Engineering DesignTop Supervision",
+                    amount: "1.0 Billion",
+                }
+            },
+        ];
+    }
 
     return (
         <>

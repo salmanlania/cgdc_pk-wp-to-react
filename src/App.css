@@ -218,11 +218,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 0, 0, 0.8),
-    rgba(255, 102, 0, 0.8)
-  );
+  background: linear-gradient(to bottom right, #ea0027, #9c0000);
   opacity: 0;
   visibility: hidden;
   display: flex;
@@ -256,8 +252,8 @@
 .ant-modal-content {
   background: linear-gradient(
     to bottom right,
-    #9c0000,
-    #f00028
+    #ea0027,
+    #9c0000
   ); /* Red gradient */
 }
 

@@ -28,7 +28,61 @@ const Power = () => {
         setSelectedCard(null); // Reset selected card when modal closes
     };
 
-    const cardData = state?.cardData;
+
+    let cardData = state?.cardData;
+
+    if (!cardData) {
+        cardData = [
+            {
+                id: 1,
+                cardTitle: "Installation of 0.2 MGD Desalination Plant at Sangar Housing Project Gwadar",
+                details: {
+                    id: 1,
+                    prjName: "Installation of 0.2 MGD Desalination Plant at Sangar Housing Project Gwadar",
+                    mainLoc: "DC Gwadar",
+                    city: "Gwadar, Pakistan",
+                    workType: "Design & Project Management",
+                    amount: "58 Million",
+                }
+            },
+            {
+                id: 2,
+                cardTitle: "Installation of 0.2 MGD Desalination Plant at Gwadar Industrial Estate",
+                details: {
+                    id: 2,
+                    prjName: "Installation of 0.2 MGD Desalination Plant at Gwadar Industrial Estate",
+                    mainLoc: "Gwadar Industrial Estate Development Authority",
+                    city: "Gwadar, Pakistan",
+                    workType: "Design & Project Management",
+                    amount: "58 Million",
+                }
+            },
+            {
+                id: 3,
+                cardTitle: "Construction of Sub Station, Installation of Transformer& Laying of LT&HT Cables",
+                details: {
+                    id: 3,
+                    prjName: "Construction of Sub Station, Installation of Transformer& Laying of LT&HT Cables",
+                    mainLoc: "Gwadar Industrial Estate Development Authority",
+                    city: "Gwadar, Pakistan",
+                    workType: "Detailed Design & Supervision",
+                    amount: "50 Million",
+                }
+            },
+            {
+                id: 4,
+                cardTitle: "Laying of Underground Cables & Installation of Transformer at Sangar Housing Project",
+                details: {
+                    id: 4,
+                    prjName: "Laying of Underground Cables & Installation of Transformer at Sangar Housing Project",
+                    mainLoc: "DC Gwadar",
+                    city: "Gwadar, Pakistan",
+                    workType: "Detailed Design & Supervision",
+                    amount: "200 Million",
+                }
+            },
+        ]
+    }
 
     return (
         <>
