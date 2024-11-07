@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from "react-helmet";
 
 const Project = () => {
 
@@ -1265,6 +1266,9 @@ const Project = () => {
     }, []);
     return (
         <>
+            <Helmet>
+                <title>Projects - CGD Consulting - Engineering Excellence</title>
+            </Helmet>
             <div className="overflow-hidden mx-3 mb-16">
                 <h1 className="extra-bold text-3xl font-arimo uppercase font-black ms-7 text-zinc-600 my-8">
                     <b>Projects</b>

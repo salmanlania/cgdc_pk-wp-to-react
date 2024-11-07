@@ -15,6 +15,7 @@ import emp12 from "../assets/images/emp12.jpg";
 import emp13 from "../assets/images/emp13.jpg";
 import emp14 from "../assets/images/emp14.png";
 import emp15 from "../assets/images/emp15.jpg";
+import { Helmet } from "react-helmet";
 
 const department = [
     { id: 1, depart: "Management" },
@@ -171,6 +172,9 @@ const OurTeam = () => {
 
     return (
         <div className="flex flex-col items-center p-4">
+            <Helmet>
+                <title>Our Architects/Team - CGD Consulting - Engineering Excellence</title>
+            </Helmet>
             <div className="mb-8 flex flex-col items-center justify-center">
                 <div className="flex flex-wrap justify-center items-center space-x-2 b-4">
                     {department.map(dep => (

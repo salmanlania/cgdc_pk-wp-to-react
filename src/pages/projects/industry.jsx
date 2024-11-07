@@ -6,6 +6,7 @@ import { Modal } from 'antd';
 import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouseChimney, faMapLocationDot, faMoneyCheckDollar, faScrewdriverWrench, faUser } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet";
 
 const Industry = () => {
     let { state } = useLocation();
@@ -98,6 +99,9 @@ const Industry = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Industrial Projects - CGD Consulting - Engineering Excellence</title>
+            </Helmet>
             {cardData ? (
                 <div className="overflow-hidden mx-1 mb-16 mt-1">
                     <Row gutter={[11, 11]}>

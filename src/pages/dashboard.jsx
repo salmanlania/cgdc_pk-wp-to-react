@@ -22,6 +22,7 @@ import video1 from "../assets/images/banner/video-1.mp4";
 import video2 from "../assets/images/banner/video-2.mp4";
 import { Col, Row } from 'antd';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 export const isHome = true;
 
@@ -35,6 +36,9 @@ const DashBoard = () => {
     return (
         <>
             <div className="banner font-outfit items-center justify-center md:justify-start">
+                <Helmet>
+                    <title>CGD Consulting - Engineering Excellence</title>
+                </Helmet>
                 <Carousel effect="fade" autoplay>
                     <div className="bannerOne relative banner">
                         {/* Background Video */}

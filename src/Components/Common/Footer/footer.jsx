@@ -96,22 +96,34 @@ const Footer = () => {
                             </h2>
                             <nav className="list-none mb-10">
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Architecture</a>
+                                    <Link to={"/services/architecture"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Architecture</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Environmental Engineering</a>
+                                    <Link to={"/services/"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Environmental Engineering</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Structural Engineering</a>
+                                    <Link to={"/services/structure-engineering"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Structural Engineering</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Sustainability</a>
+                                    <Link to={"/services/"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Sustainability</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Urban Design and Landscape</a>
+                                    <Link to={"/services/"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Urban Design and Landscape</a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2">
-                                    <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Industrial Design</a>
+                                    <Link to={"/services/"}>
+                                        <a className="text-gray-600 text-sm cursor-pointer hover:text-black">Industrial Design</a>
+                                    </Link>
                                 </li>
                             </nav>
                         </div>

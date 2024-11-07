@@ -1,10 +1,14 @@
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Row } from "antd";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
     return (
         <>
+            <Helmet>
+                <title>Contact Us - CGD Consulting - Engineering Excellence</title>
+            </Helmet>
             <div className="lg:my-24 md:my-24 my-12 mx-4">
                 <div className="flex py-0">
                     <div className="flex flex-col w-full max-w-screen-xl">

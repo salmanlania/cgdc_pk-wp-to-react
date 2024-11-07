@@ -1,10 +1,14 @@
 import { Col, Image, Row } from "antd";
 import Eye from "../assets/images/abouteye.jpg";
 import Mission from "../assets/images/aboutmission.jpg";
+import { Helmet } from "react-helmet";
 
 const About = () => {
     return (
         <>
+            <Helmet>
+                <title>About Us - CGD Consulting - Engineering Excellence</title>
+            </Helmet>
             <div className="about">
                 <div className="aboutImage flex items-center justify-center">
                     <h1 className="uppercase font-bold font-outfit lg:text-5xl text-4xl text-white text-center">
