@@ -66,19 +66,19 @@ const Navbar = () => {
 
                 {/* Navigation for Desktop */}
                 <nav className="hidden md:flex md:ml-auto font-outfit flex-wrap items-center text-base justify-center">
-                    <Link to="/" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">HOME</span></Link>
-                    <Link to="/about" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">ABOUT US</span></Link>
+                    <Link to="/" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">HOME</span></Link>
+                    <Link to="/about" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">ABOUT US</span></Link>
                     <Dropdown menu={{ items: servicesMenu }} trigger={['click']}>
-                        <span className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}>
+                        <span className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}>
                             <span className="mr-5 py-5 text-xs">OUR SERVICES <CaretDownOutlined /></span>
                         </span>
                     </Dropdown>
-                    <Link to="/projects" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">PROJECTS</span></Link>
-                    <Link to="/ourteam" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">OUR TEAM</span></Link>
-                    <Link to="/careers" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">CAREERS</span></Link>
-                    <Link to="/affiliations" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">AFFILIATIONS</span></Link>
-                    <Link to="/news" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">NEWS</span></Link>
-                    <Link to="/contact" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer`}><span className="mr-5 py-5 text-xs">CONTACT US</span></Link>
+                    <Link to="/projects" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">PROJECTS</span></Link>
+                    <Link to="/ourteam" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">OUR TEAM</span></Link>
+                    <Link to="/careers" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">CAREERS</span></Link>
+                    <Link to="/affiliations" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">AFFILIATIONS</span></Link>
+                    <Link to="/news" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">NEWS</span></Link>
+                    <Link to="/contact" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">CONTACT US</span></Link>
                 </nav>
             </div>
         </header>

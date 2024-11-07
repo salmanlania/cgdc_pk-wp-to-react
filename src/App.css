@@ -206,3 +206,68 @@
   max-height: 90vh;
   overflow-y: auto;
 }
+.project-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Ensures the card takes up full column width */
+  height: 100%; /* Maintains aspect ratio */
+}
+.project-card .project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 0, 0, 0.8),
+    rgba(255, 102, 0, 0.8)
+  );
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in, visibility 0.5s ease-in-out;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-card .project-overlay .first-span {
+  font-weight: bold;
+  border-left: 4px solid white;
+  transform: translateX(20px) translateY(20px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-card:hover .project-overlay .first-span {
+  transform: translateX(0) translateY(0);
+}
+
+.extra-bold {
+  font-weight: 900;
+  -webkit-text-stroke: 0.9px rgba(0, 0, 0, 0.441); /* Adds extra bold effect */
+}
+
+/* Apply gradient to modal content */
+.ant-modal-content {
+  background: linear-gradient(
+    to bottom right,
+    #9c0000,
+    #f00028
+  ); /* Red gradient */
+}
+
+/* Ensure modal body is transparent for the gradient to show */
+.ant-modal-body {
+  background: transparent;
+}
+.ant-modal-body br {
+  display: block;
+  content: "";
+  height: 0.4px;
+  background-color: white; /* Creating a white break */
+}

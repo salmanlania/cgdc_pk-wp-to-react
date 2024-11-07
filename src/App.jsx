@@ -15,10 +15,21 @@ import StructEng from "./pages/services/structEng";
 import Building from "./pages/services/building";
 import Finance from "./pages/services/finance";
 import Interior from "./pages/services/interior";
+import Project from "./pages/projects";
+import Housing from "./pages/projects/housing";
+import Infrastructure from "./pages/projects/infrastructure";
+import Health from "./pages/projects/health";
+import Institute from "./pages/projects/institute";
+import Industry from "./pages/projects/industry";
+import Mixed from "./pages/projects/mixed";
+import Tourism from "./pages/projects/tourism";
+import Power from "./pages/projects/power";
+import ScrollToTop from "./Components/compulsory/scrollToTop";
 export default function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes >
           <Route index element={<DashBoard />} />
@@ -26,6 +37,8 @@ export default function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="ourteam" element={<OurTeam />} />
           <Route path="service" element={<ServiceComp />} />
+          <Route path="projects" element={<Project />} />
+
           <Route path="services">
             <Route path="Town-planning" element={<TownPlanning />} />
             <Route path="architecture" element={<Architecture />} />
@@ -36,6 +49,18 @@ export default function App() {
             <Route path="financial-feasibility" element={<Finance />} />
             <Route path="interior-designing" element={<Interior />} />
           </Route>
+
+          <Route path="project">
+            <Route path="housing-and-urban-design" element={<Housing />} />
+            <Route path="infrastructure" element={<Infrastructure />} />
+            <Route path="health-facility" element={<Health />} />
+            <Route path="institutinal-buildings" element={<Institute />} />
+            <Route path="industrial-projects" element={<Industry />} />
+            <Route path="mixed-use-projects" element={<Mixed />} />
+            <Route path="recreational-tourism" element={<Tourism />} />
+            <Route path="water-and-power" element={<Power />} />
+          </Route>
+
         </Routes>
         <Footer />
       </BrowserRouter >
