@@ -1,4 +1,5 @@
 import { Carousel, Image } from 'antd';
+import { faFacebook, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
@@ -23,14 +24,15 @@ import video2 from "../assets/images/banner/video-2.mp4";
 import { Col, Row } from 'antd';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const isHome = true;
 
 const DashBoard = () => {
     useEffect(() => {
         AOS.init({
-            duration: 2000, // Animation duration in milliseconds
-            once: true,     // Animation only once while scrolling
+            duration: 3000,
+            offset: 0,
         });
     }, []);
     return (
@@ -165,7 +167,8 @@ const DashBoard = () => {
                 <div className="my-12">
                     <Row gutter={[20, 24]}>
                         <Col className="gutter-row" xs={24} sm={12} md={8} >
-                            <div className="projectImage relative overflow-hidden">
+                            <div className="projectImage relative overflow-hidden" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic">
                                 <Image src={project1} preview={false} className="object-cover w-full h-full" />
                                 <span className="absolute inset-0"></span>
                                 <span className="overlayText absolute font-medium bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded overflow-hidden text-ellipsis">
@@ -174,7 +177,8 @@ const DashBoard = () => {
                             </div>
                         </Col>
                         <Col className="gutter-row" xs={24} sm={12} md={8} >
-                            <div className="projectImage relative overflow-hidden">
+                            <div className="projectImage relative overflow-hidden" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic">
                                 <Image src={project2} preview={false} className="object-cover w-full h-full" />
                                 <span className="absolute inset-0"></span>
                                 <span className="overlayText absolute font-medium bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded overflow-hidden text-ellipsis">
@@ -183,7 +187,8 @@ const DashBoard = () => {
                             </div>
                         </Col>
                         <Col className="gutter-row" xs={24} sm={12} md={8} >
-                            <div className="projectImage relative overflow-hidden">
+                            <div className="projectImage relative overflow-hidden" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic">
                                 <Image src={project3} preview={false} className="object-cover w-full h-full" />
                                 <span className="absolute inset-0"></span>
                                 <span className="overlayText absolute font-medium bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded overflow-hidden text-ellipsis">
@@ -192,7 +197,8 @@ const DashBoard = () => {
                             </div>
                         </Col>
                         <Col className="gutter-row" xs={24} sm={12} md={8} >
-                            <div className="projectImage relative overflow-hidden">
+                            <div className="projectImage relative overflow-hidden" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic">
                                 <Image src={project4} preview={false} className="object-cover w-full h-full" />
                                 <span className="absolute inset-0"></span>
                                 <span className="overlayText absolute font-medium bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded overflow-hidden text-ellipsis">
@@ -201,7 +207,8 @@ const DashBoard = () => {
                             </div>
                         </Col>
                         <Col className="gutter-row" xs={24} sm={12} md={8} >
-                            <div className="projectImage relative overflow-hidden">
+                            <div className="projectImage relative overflow-hidden" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic">
                                 <Image src={project5} preview={false} className="object-cover w-full h-full" />
                                 <span className="absolute inset-0"></span>
                                 <span className="overlayText absolute font-medium bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded overflow-hidden text-ellipsis">
@@ -210,7 +217,8 @@ const DashBoard = () => {
                             </div>
                         </Col>
                         <Col className="gutter-row" xs={24} sm={12} md={8} >
-                            <div className="projectImage relative overflow-hidden">
+                            <div className="projectImage relative overflow-hidden" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic">
                                 <Image src={project6} preview={false} className="object-cover w-full h-full" />
                                 <span className="absolute inset-0"></span>
                                 <span className="overlayText absolute font-medium bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded overflow-hidden text-ellipsis">
@@ -220,6 +228,86 @@ const DashBoard = () => {
                         </Col>
                     </Row>
                 </div>
+            </div >
+            <div className="py-12 lg:px-16 px-6 overflow-hidden bg-stone-100">
+                <Row gutter={[20, 24]}>
+                    <Col className="gutter-row flex flex-col items-center" xs={24} sm={12} md={8}>
+                        <a href="https://www.facebook.com/CGarchitectsandplanners" target='_blank' >
+                            <button className="font-arimo tracking-wider text-base text-red-600 outline outline-2 my-12 px-8 py-2 rounded-sm flex items-center justify-center hover:bg-red-600 hover:text-white transition-all duration-300 ease-in-out">
+                                Follow Us
+                                <FontAwesomeIcon className="ms-6" icon={faFacebook} />
+                            </button>
+                        </a>
+                        <div className="relative overflow-hidden object-contain" data-aos="fade-up" >
+                            <iframe
+                                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCGarchitectsandplanners%2Fposts%2Fpfbid0fLRoExErSGEEJw8c2YBroScNY4emPLai9c7Dba7NWctAXnRhGv51aE2jEhd4eQEBl"
+                                width={300}
+                                height={400}
+                            />
+                            <iframe
+                                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCGarchitectsandplanners%2Fposts%2Fpfbid037iF3XwJmShAdtsPKcRpRA3yh7hXEV42qEvnUDbKxpBj3SFdZ7TU4GuAW9WeQoDbMl"
+                                width={300}
+                                height={400}
+                            />
+                        </div>
+                    </Col>
+
+                    <Col className="gutter-row flex flex-col items-center" xs={24} sm={12} md={8}>
+                        <a href="https://instagram.com/cgdconsulting" target='_blank'>
+                            <button className="font-arimo tracking-wider text-base text-red-600 outline outline-2 my-12 px-8 py-2 rounded-sm flex items-center justify-center hover:bg-red-600 hover:text-white transition-all duration-300 ease-in-out">
+                                Follow Us
+                                <FontAwesomeIcon className="ms-6" icon={faInstagram} />
+                            </button>
+                        </a>
+                        <div className="relative overflow-hidden object-contain" data-aos="fade-up" >
+                            <iframe
+                                src="https://www.instagram.com/p/Csle7v7KSsa/embed"
+                                className="w-full h-[500px]"
+                                allowFullScreen
+                                title="Instagram Post"
+                                loading="lazy"
+                            ></iframe>
+                            <iframe
+                                src="https://www.instagram.com/p/CscWSjTqknV/embed"
+                                className="w-full h-[500px]"
+                                allowFullScreen
+                                title="Instagram Post"
+                                loading="lazy"
+                            ></iframe>
+
+
+                        </div>
+
+                    </Col>
+
+                    <Col className="gutter-row flex flex-col items-center" xs={24} sm={12} md={8}>
+                        <a href="https://www.linkedin.com/company/cgdconsulting/" target='_blank'>
+                            <button className="font-arimo tracking-wider text-base text-red-600 outline outline-2 my-12 px-8 py-2 rounded-sm flex items-center justify-center hover:bg-red-600 hover:text-white transition-all duration-300 ease-in-out">
+                                Follow Us
+                                <FontAwesomeIcon className="ms-6" icon={faLinkedinIn} />
+                            </button>
+                        </a>
+                        <div className="relative overflow-hidden object-contain" data-aos="fade-up" >
+                            <iframe
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7059220615441899520"
+                                className="w-full h-[600px]"
+                                allowFullScreen
+                                title="LinkedIn Post"
+                                loading="lazy"
+                            ></iframe>
+                            <div className="text-gray-400 text-center text-xs py-2">
+                                <a
+                                    href="https://www.linkedin.com/posts/cgdconsulting_cgdconsulting-engineeringexcellence-sustainableurbandevelopment-activity-7059220615441899520-_xcE?utm_source=share&utm_medium=member_desktop"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-500 font-semibold"
+                                >
+                                    View this post on LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
             </div >
         </>
     );
