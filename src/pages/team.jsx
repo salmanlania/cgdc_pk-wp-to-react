@@ -8,6 +8,8 @@ import emp5 from "../assets/images/emp5.jpg";
 import emp6 from "../assets/images/emp6.jpg";
 import emp7 from "../assets/images/emp7.jpg";
 import emp8 from "../assets/images/emp8.jpg";
+import user from "../assets/images/user.png";
+import shahbaz from "../assets/images/shahbaz1.jpg";
 import emp9 from "../assets/images/emp9.jpg";
 import emp10 from "../assets/images/emp10.jpg";
 import emp11 from "../assets/images/emp11.jpg";
@@ -24,6 +26,7 @@ const department = [
 ];
 
 const teamArray = [
+    // Management
     {
         id: 1,
         empName: "Hafeez Habibi",
@@ -44,13 +47,16 @@ const teamArray = [
     },
     {
         id: 3,
-        empName: "Sami Sajid",
+        empName: "Sehar Hafeez",
         post: "Executive Director",
-        image: emp3,
+        image: user,
         description: "Sami Sajid is an experienced and accomplished business development professional with over 25 years of experience. With an academic background in Political Science, Sami has a comprehensive understanding of the principles and strategies necessary for successful business development. Throughout his career, Sami has established a consistent ability to identify and pursue new business opportunities, build and maintain relationships with clients and partners, and drive revenue growth for the organizations. Sami is a highly talented business development professional with a proven track record of success. He is a valuable asset to our organization, looking to expand and grow.",
         modal: true,
         depart: "Management",
     },
+
+    //Executive Team
+
     {
         id: 4,
         empName: "Sohail Aslam",
@@ -61,14 +67,30 @@ const teamArray = [
     },
     {
         id: 5,
-        empName: "Maj. ® Ahsan Siddiqui",
-        post: "Executive Director",
-        image: emp5,
+        empName: "Babar Saleem",
+        post: "CFO",
+        image: emp8,
         modal: false,
         depart: "Executive Team",
     },
     {
         id: 6,
+        empName: "Fayyaz",
+        post: "Executive Director",
+        image: user,
+        modal: false,
+        depart: "Executive Team",
+    },
+    // {
+    //     id: 5,
+    //     empName: "Maj. ® Ahsan Siddiqui",
+    //     post: "Executive Director",
+    //     image: emp5,
+    //     modal: false,
+    //     depart: "Executive Team",
+    // },
+    {
+        id: 7,
         empName: "Tariq Saeed",
         post: "Director Engineering",
         image: emp6,
@@ -76,77 +98,120 @@ const teamArray = [
         depart: "Executive Team",
     },
     {
-        id: 7,
-        empName: "Imran A. Khan",
-        post: "Executive Director",
-        image: emp7,
+        id: 8,
+        empName: "Zaheer Naqvi",
+        post: "Director Engineering",
+        image: user,
         modal: false,
         depart: "Executive Team",
     },
     {
-        id: 8,
-        empName: "Baber Saleem",
-        post: "CFO",
-        image: emp8,
-        modal: false,
-        depart: "Core Team",
-    },
-    {
         id: 9,
-        empName: "Danish Wali",
-        post: "Company Secretary",
-        image: emp9,
+        empName: "Fasial Majid",
+        post: "Director Engineering",
+        image: user,
         modal: false,
-        depart: "Core Team",
+        depart: "Executive Team",
     },
+    // {
+    //     id: 10,
+    //     empName: "Imran A. Khan",
+    //     post: "Executive Director",
+    //     image: emp7,
+    //     modal: false,
+    //     depart: "Executive Team",
+    // },
+
+    //Core Team
+
     {
-        id: 10,
-        empName: "Marium Sheerazi",
-        post: "Head of Legal & Compliance",
-        image: emp10,
+        id: 11,
+        empName: "Hashmi",
+        post: "-",
+        image: user,
         modal: false,
         depart: "Core Team",
     },
     {
         id: 11,
-        empName: "Jamil Ahmed Khan",
-        post: "Project Manager",
-        image: emp11,
+        empName: "Muzaffar",
+        post: "-",
+        image: user,
         modal: false,
         depart: "Core Team",
     },
     {
-        id: 12,
-        empName: "Sajjad Ali",
-        post: "Senior Planner",
-        image: emp12,
+        id: 11,
+        empName: "Shahbaz Abdullah",
+        post: "Head Of IT",
+        image: shahbaz,
         modal: false,
         depart: "Core Team",
     },
-    {
-        id: 13,
-        empName: "Saif Uddin",
-        post: "Senior Architect",
-        image: emp13,
-        modal: false,
-        depart: "Core Team",
-    },
-    {
-        id: 14,
-        empName: "Fariha Zuberi",
-        post: "Senior Urban Planner",
-        image: emp14,
-        modal: false,
-        depart: "Core Team",
-    },
-    {
-        id: 15,
-        empName: "Adil Nawaz",
-        post: "Architect",
-        image: emp15,
-        modal: false,
-        depart: "Core Team",
-    },
+    // {
+    //     id: 8,
+    //     empName: "Baber Saleem",
+    //     post: "CFO",
+    //     image: emp8,
+    //     modal: false,
+    //     depart: "Core Team",
+    // },
+    // {
+    //     id: 9,
+    //     empName: "Danish Wali",
+    //     post: "Company Secretary",
+    //     image: emp9,
+    //     modal: false,
+    //     depart: "Core Team",
+    // },
+    // {
+    //     id: 10,
+    //     empName: "Marium Sheerazi",
+    //     post: "Head of Legal & Compliance",
+    //     image: emp10,
+    //     modal: false,
+    //     depart: "Core Team",
+    // },
+    // {
+    //     id: 11,
+    //     empName: "Jamil Ahmed Khan",
+    //     post: "Project Manager",
+    //     image: emp11,
+    //     modal: false,
+    //     depart: "Core Team",
+    // },
+    // {
+    //     id: 12,
+    //     empName: "Sajjad Ali",
+    //     post: "Senior Planner",
+    //     image: emp12,
+    //     modal: false,
+    //     depart: "Core Team",
+    // },
+    // {
+    //     id: 13,
+    //     empName: "Saif Uddin",
+    //     post: "Senior Architect",
+    //     image: emp13,
+    //     modal: false,
+    //     depart: "Core Team",
+    // },
+    // {
+    //     id: 14,
+    //     empName: "Fariha Zuberi",
+    //     post: "Senior Urban Planner",
+    //     image: emp14,
+    //     modal: false,
+    //     depart: "Core Team",
+    // },
+    // {
+    //     id: 15,
+    //     empName: "Adil Nawaz",
+    //     post: "Architect",
+    //     image: emp15,
+    //     modal: false,
+    //     depart: "Core Team",
+    // },
 ];
 
 const OurTeam = () => {
